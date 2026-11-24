@@ -1,51 +1,113 @@
-# UNAI TECH Internship Project
+# AI Recommendation Engine
 
-## Project Domain
-Full Stack Development with AI
+## UNAI TECH Virtual Internship Program 2026
 
-## Project Name
-AI Recommendation Engine
+An AI Recommendation Engine designed to help users discover relevant learning resources through a course catalog and user interaction tracking.
 
-## About the Project
-This project is developed as part of the UNAI TECH Virtual Internship Program 2026.
+## Project Overview
 
-The project focuses on developing a web-based AI Recommendation Engine that provides personalized recommendations based on user interests and activities.
+The AI Recommendation Engine is a web-based application developed as part of the UNAI TECH Virtual Internship Program 2026.
 
-## Project Objectives
-- Provide personalized recommendations to users.
-- Track user interactions such as clicks and views.
-- Recommend popular items for new users.
-- Improve user experience through relevant suggestions.
+The project aims to provide users with relevant learning resources and personalized recommendations based on their interests and interactions.
+
+## Phase 1 – Day 5 Implementation
+
+**Selected Module:** Course Catalog and User Interaction Module
+
+### Implemented Features
+
+- Display a catalog of learning resources.
+- Retrieve catalog data from the Flask backend.
+- Show course names, categories and descriptions.
+- Record user interactions.
+- Provide API responses in JSON format.
+
+## Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| HTML | Website structure |
+| CSS | Website styling |
+| JavaScript | Frontend functionality |
+| Python | Backend programming |
+| Flask | REST API development |
+| Flask-CORS | Frontend-backend communication |
 
 ## Project Structure
 
-- `frontend/` – User interface
-- `backend/` – Server-side processing
-- `backend/routes/` – API routes
-- `docs/` – Project documentation
-- `tests/` – Testing files
+```text
+UNAI-TECH-Internship-2026/
+│
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── venv/
+│
+├── frontend/
+│   ├── index.html
+│   ├── css/
+│   │   └── style.css
+│   └── script.js
+│
+└── README.md
+```
 
-## Project Modules
+**Note:** The `venv/` folder is a local environment and should not be uploaded to GitHub.
 
-1. Frontend Module
-2. User Interaction Module
-3. Item Catalog Module
-4. Recommendation Engine Module
-5. API Module
-6. Dashboard Module
-7. Testing Module
+## Backend API Endpoints
 
-## Architecture
-The frontend communicates with the backend through API requests. The backend processes user interactions and item data. The recommendation engine generates relevant recommendations and sends the results back to the frontend.
+| Endpoint | Method | Description |
+|---|---|---|
+| `/` | GET | Backend status |
+| `/api/items` | GET | Retrieve catalog items |
+| `/api/interactions` | POST | Record user interactions |
+| `/api/interactions` | GET | View recorded interactions |
 
-## Project Documentation
+## Installation and Execution
 
-- `docs/requirements.md` – Requirements analysis and module planning
-- `docs/development_tasks.md` – Development task list
-- `docs/project_structure.png` – Project structure diagram
+### 1. Clone the repository
 
-## Internship Progress
-Phase 1 – Day 4: Requirements Analysis and Module Planning
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
 
-## GitHub Repository
-https://github.com/Padmavati2611/UNAI-TECH-Internship-2026
+### 2. Open the project folder
+
+```bash
+cd UNAI-TECH-Internship-2026
+```
+
+### 3. Install backend dependencies
+
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+### 4. Start the Flask backend
+
+```bash
+python app.py
+```
+
+Backend URL:
+
+```text
+http://127.0.0.1:5000
+```
+
+### 5. Run the frontend
+
+Open `frontend/index.html` using VS Code Live Server.
+
+## Testing
+
+The backend can be tested using:
+
+```text
+http://127.0.0.1:5000/
+http://127.0.0.1:5000/api/items
+http://127.0.0.1:5000/api/interactions
+```
+
+The frontend should retrieve data from `/api/items`
