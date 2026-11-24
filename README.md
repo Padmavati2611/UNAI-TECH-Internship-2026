@@ -1,113 +1,119 @@
 # AI Recommendation Engine
 
-## UNAI TECH Virtual Internship Program 2026
+A full-stack web application developed as part of the **UNAI TECH Virtual Internship Program 2026 – Phase 1, Day 6**.
 
-An AI Recommendation Engine designed to help users discover relevant learning resources through a course catalog and user interaction tracking.
+The project provides a catalog of learning resources where users can browse items, search for content, view item details, and save or mark items as interested.
 
-## Project Overview
+## Project Features
 
-The AI Recommendation Engine is a web-based application developed as part of the UNAI TECH Virtual Internship Program 2026.
+### 1. Learning Resource Catalog
+- Displays learning resources as cards.
+- Search and filter resources.
+- View information about individual items.
+- Clean and responsive catalog interface.
 
-The project aims to provide users with relevant learning resources and personalized recommendations based on their interests and interactions.
+### 2. Saved & Interested Items
+- Save resources for later.
+- Mark resources as interested.
+- Remove saved or interested items.
+- View saved and interested resources in a separate section.
 
-## Phase 1 – Day 5 Implementation
-
-**Selected Module:** Course Catalog and User Interaction Module
-
-### Implemented Features
-
-- Display a catalog of learning resources.
-- Retrieve catalog data from the Flask backend.
-- Show course names, categories and descriptions.
-- Record user interactions.
-- Provide API responses in JSON format.
+### 3. Backend Integration
+- Flask backend built with Python.
+- Frontend communicates with the backend through HTTP requests.
+- Supports user interaction and activity-related functionality.
 
 ## Technologies Used
 
-| Technology | Purpose |
-|---|---|
-| HTML | Website structure |
-| CSS | Website styling |
-| JavaScript | Frontend functionality |
-| Python | Backend programming |
-| Flask | REST API development |
-| Flask-CORS | Frontend-backend communication |
+- HTML
+- CSS
+- JavaScript
+- Python
+- Flask
 
 ## Project Structure
 
 ```text
 UNAI-TECH-Internship-2026/
 │
-├── backend/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── venv/
-│
 ├── frontend/
-│   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   └── script.js
+│   └── index.html
+│
+├── backend/
+│   └── app.py
+│
+├── docs/
 │
 └── README.md
 ```
 
-**Note:** The `venv/` folder is a local environment and should not be uploaded to GitHub.
+## How to Run the Project
 
-## Backend API Endpoints
+### Step 1: Open the Project
 
-| Endpoint | Method | Description |
-|---|---|---|
-| `/` | GET | Backend status |
-| `/api/items` | GET | Retrieve catalog items |
-| `/api/interactions` | POST | Record user interactions |
-| `/api/interactions` | GET | View recorded interactions |
+Open the project folder in Visual Studio Code.
 
-## Installation and Execution
+### Step 2: Start the Backend
 
-### 1. Clone the repository
+Open the VS Code terminal and run:
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+```powershell
+python backend\app.py
 ```
 
-### 2. Open the project folder
-
-```bash
-cd UNAI-TECH-Internship-2026
-```
-
-### 3. Install backend dependencies
-
-```bash
-cd backend
-pip install -r requirements.txt
-```
-
-### 4. Start the Flask backend
-
-```bash
-python app.py
-```
-
-Backend URL:
+The Flask backend should start at:
 
 ```text
 http://127.0.0.1:5000
 ```
 
-### 5. Run the frontend
+To check whether the backend is running, open the backend address in your browser.
 
-Open `frontend/index.html` using VS Code Live Server.
+### Step 3: Start the Frontend
+
+Open `frontend/index.html` using the **Live Server** extension in Visual Studio Code.
+
+The frontend may open at:
+
+```text
+http://127.0.0.1:5500/frontend/index.html
+```
+
+Keep the backend terminal running while using the application.
 
 ## Testing
 
-The backend can be tested using:
+The following areas are included in the project testing:
 
-```text
-http://127.0.0.1:5000/
-http://127.0.0.1:5000/api/items
-http://127.0.0.1:5000/api/interactions
-```
+- Catalog page loading
+- Search functionality
+- Saved item functionality
+- Interested item functionality
+- Removing saved or interested items
+- Backend startup and connection
+- Frontend and backend integration
 
-The frontend should retrieve data from `/api/items`
+The View Item functionality should be verified after the latest bug fixes.
+
+## Day 6 Internship Deliverables
+
+This project was improved by:
+
+- Enhancing the existing catalog module.
+- Adding the Saved & Interested Items feature.
+- Integrating frontend interactions with the backend.
+- Testing the main application features.
+- Updating the project documentation.
+
+## Repository
+
+GitHub Repository:
+
+[UNAI-TECH-Internship-2026](https://github.com/Padmavati2611/UNAI-TECH-Internship-2026)
+
+## Author
+
+**Padmavati B**
+
+UNAI TECH Virtual Internship Program 2026  
+Phase 1 – Day 6
